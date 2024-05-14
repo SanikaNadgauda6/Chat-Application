@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ChatPage{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    height: 89.5vh;
+}
+.UserList{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+}
+.UserList h2{
+    text-align: center;
+}
+.userlists{
+    background-color: #ddf4ff;
+    padding: 12px;
+    margin: 8px;
+}
+.userlists li{
+    list-style-type: none;
+    color: #000000;
+    font-size: 18px;
+}
+.chatPanel{
+    width: 70%;
+    background-color: rgb(36, 36, 36);
+    /* padding: 10px 10px 3px 10px; */
+    padding: 10px 10px 80px 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+.Messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.sent-message, .received-message {
+    display: block;
+    max-width: 40%;
+    border-radius: 5px;
+    clear: both;
+}
+
+.sent-message, .received-message span{
+    margin: 0;
+}
+.sent-message {
+    text-align: right;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    background-color: rgb(137, 241, 255);
+    margin-right: 6px;
+}
+
+.received-message {
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    margin-right: 6px;
+}
+
+.form {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: calc(70% - 20px);
+        /* Adjust width to match chatPanel width and add padding */
+        padding: 10px;
+        background-color: rgb(36, 36, 36);
+}
+
+input[type='text'] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form .send-button, .signout-button {
+    padding: 10px 20px;
+    background-color: #004464;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #000000;
+}
+
+
+.header{
+    height: 70px;
+    background-color: rgb(199, 247, 255);
+    box-shadow: inset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
