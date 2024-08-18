@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Auth from "./auth/auth";
 import Signup from './components/Signup-login/signup';
-import Register from "./auth/register";
+// import Register from "./auth/register";
 import { ChatPage } from './components/chatsPage';
 import { LoginContext } from './context';
 import Login from './components/Signup-login/login';

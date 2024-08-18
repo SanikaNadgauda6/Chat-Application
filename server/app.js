@@ -7,6 +7,7 @@ import { chatModel } from "./models/chat.schema.js";
 import { UserRouter } from "./routes/user.js";
 import cookieParser from "cookie-parser";
 import dotenv from 'dotenv';
+import path from "path";
 const port = 3000;
 
 const app = express();
